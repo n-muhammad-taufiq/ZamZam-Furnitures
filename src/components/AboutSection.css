@@ -1,0 +1,109 @@
+.about-section {
+  background-color: var(--bg-white);
+  border-top: 1px solid var(--border-color);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image-column {
+  flex: 1;
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.about-experience-badge {
+  position: absolute;
+  bottom: 40px;
+  right: -40px;
+  background-color: var(--primary-maroon);
+  color: white;
+  padding: 30px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--bg-white);
+}
+
+.about-experience-badge .years {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.about-experience-badge .text {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-content-column {
+  flex: 1;
+}
+
+.about-text {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  color: var(--accent-navy);
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--secondary-gold);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.mt-30 {
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .about-experience-badge {
+    right: 20px;
+  }
+}

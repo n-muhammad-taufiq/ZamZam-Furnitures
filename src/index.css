@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --primary-maroon: #7B1818;
+  --primary-maroon-hover: #5a1111;
+  --secondary-gold: #D4AF37;
+  --secondary-gold-hover: #b5952f;
+  --accent-navy: #0A192F;
+  --text-dark: #1A1A1A;
+  --text-muted: #666666;
+  --text-light: #F8F9FA;
+  --bg-cream: #FCFAF8;
+  --bg-white: #FFFFFF;
+  --border-color: #EAEAEA;
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--accent-navy);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: var(--primary-maroon);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-maroon-hover);
+}
+
+.btn-gold {
+  background-color: var(--secondary-gold);
+  color: var(--text-light);
+}
+
+.btn-gold:hover {
+  background-color: var(--secondary-gold-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--accent-navy);
+  color: var(--accent-navy);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-navy);
+  color: var(--text-light);
+}
